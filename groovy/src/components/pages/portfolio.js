@@ -28,7 +28,8 @@ repolink: "https://github.com/Danaalami-cloud/NoteApp"},
   {projects.map((project) => (
     <Col>
       <Card>
-        <Card.Img  as={ Image} variant="top" src={scheduler}  />
+        <Card.Img  as={ Image} variant="top" src={scheduler} 
+        if (scheduler) />
         <Card.Img  as={ Image} variant="top" src={lookafteryourself3000} />
         <Card.Img  as={ Image} variant="top" src={yummydescription}  />
         <Card.Body>
