@@ -25,38 +25,38 @@ function Contact() {
       setfirstName(inputValue);
     } else if (inputType === 'lastName') {
       setlastName(inputValue);
-    } else  setErrorMessage (inputVaule)
+    } else  setErrorMessage (inputValue)
     }
-  };
+  ;
 
   const handleFormSubmit = (e) => {
     // Preventing the default behavior of the form submit (which is to refresh the page)
     e.preventDefault();
 
     // First we check to see if the email is not valid or if the userName is empty. If so we set an error message to be displayed on the page.
-    if (!validateEmail(email) || !userName) {
-      setErrorMessage('Email or username is invalid');
-      // We want to exit out of this code block if something is wrong so that the user can correct it
-      return;
-      // Then we check to see if the password is not valid. If so, we set an error message regarding the password.
-    }
-    if (!checkPassword(password)) {
-      setErrorMessage(
-        `Choose a more secure password for the account: ${userName}`
-      );
-      return;
-    }
-    alert(`Hello ${userName}`);
+    // if (!validateEmail(email)) {
+    //   setErrorMessage('Email is invalid');
+    //   // We want to exit out of this code block if something is wrong so that the user can correct it
+    //   return;
+    //   // Then we check to see if the password is not valid. If so, we set an error message regarding the password.
+    // }
+    // if (!checkPassword(password)) {
+    //   setErrorMessage(
+    //     `Choose a more secure password for the account: ${userName}`
+    //   );
+    //   return;
+    // }
+    // alert(`Hello ${userName}`);
 
     // If everything goes according to plan, we want to clear out the input after a successful registration.
-    setUserName('');
-    setPassword('');
+    setfirstName('');
+    setlastName('');
     setEmail('');
   };
 
   return (
     <div>
-      <p>Hello {userName}</p>
+      <p>Hello {firstName}</p>
       <form className="form">
         <input
           value={email}
@@ -66,18 +66,18 @@ function Contact() {
           placeholder="email"
         />
         <input
-          value={userName}
-          name="userName"
+          value={lastName}
+          name="lastName"
           onChange={handleInputChange}
           type="text"
-          placeholder="username"
+          placeholder="lastname"
         />
         <input
-          value={password}
-          name="password"
+          value={firstName}
+          name="firstName"
           onChange={handleInputChange}
-          type="password"
-          placeholder="Password"
+          type="text"
+          placeholder="firstName"
         />
         <button type="button" onClick={handleFormSubmit}>Submit</button>
       </form>
@@ -89,5 +89,6 @@ function Contact() {
     </div>
   );
 }
+
 
 export default Contact;
