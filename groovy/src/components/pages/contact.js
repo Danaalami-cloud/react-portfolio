@@ -5,6 +5,7 @@ import React, { useState } from 'react';
 // import { checkPassword, validateEmail } from '../../utils/helpers';
 
 function Contact() {
+    
   // Create state variables for the fields in the form
   // We are also setting their initial values to an empty string
   const [email, setEmail] = useState('');
@@ -55,7 +56,7 @@ function Contact() {
   };
 
   return (
-    <div>
+    <div className="contact">
       <p>Hello {firstName}</p>
       <form className="form">
         <input
@@ -86,7 +87,9 @@ function Contact() {
           <p className="error-text">{errorMessage}</p>
         </div>
       )}
+      
     </div>
+    
   );
 }
 

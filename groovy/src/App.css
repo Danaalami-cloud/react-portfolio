@@ -1,9 +1,23 @@
 .App {
   text-align: center;
-  color: aquamarine;
+  color: black;
 }
 
-
+/* .App-theme {
+  background-color: aquamarine;
+} */
+.about {
+  background-color: #ee6c4d;
+}
+.home {
+  background-color: #17a398;
+}
+.g-4 {
+  background-color: #33312e;
+}
+/* .contact {
+  background-color: #662c91;
+} */
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

@@ -2,9 +2,10 @@ import React, { useState } from "react";
 import { Card, Col, Row , Button, Image} from "react-bootstrap"
 import scheduler from '../../images/scheduler.png'
  import jsquiz from '../../images/jsquiz.png'
-import lookafteryourself3000 from '../../images/lookafteryourself3000.png'
-import yummydescription from '../../images/yummydescription.jpg'
-import password from "../../images/password.png"
+import lookafteryourself3000 from '../../images/lookafteryourself3000.png';
+import yummydescription from '../../images/yummydescription.jpg';
+import password from "../../images/password.png";
+
 
 const Portfolio = () => {
     const [projects, setProject] = useState ([{name:"Work Scheduler", link:"https://danaalami-cloud.github.io/work-day-calendar-application/",

@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function About() {
   return (
-    <div>
+    <div className="about">
       <h1>About Page</h1>
       <p>
       Hello, I'm Dana Alami and I'm a gradute from the University of Manchester with an undegradute hons degree in Business and Management with Italian Language. 
