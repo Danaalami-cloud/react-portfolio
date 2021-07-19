@@ -18,6 +18,10 @@
 /* .contact {
   background-color: #662c91;
 } */
+
+/* .github {
+  image-size: 20%;
+} */
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
