@@ -2,7 +2,7 @@
   "name": "groovy",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/Danaalami-cloud/react-portfolio",
+  "homepage": "https://Danaalami-cloud.github.io/react-portfolio",
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
