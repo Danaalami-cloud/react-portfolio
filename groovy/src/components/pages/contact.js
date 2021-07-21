@@ -57,7 +57,8 @@ function Contact() {
 
   return (
     <div className="contact">
-      <p>Hello {firstName}</p>
+      <p>Contact Me! {firstName}</p>
+      <p>Email: danaalami@msn.com</p>
       <form className="form">
         <input
           value={email}
@@ -86,6 +87,7 @@ function Contact() {
         <div>
           <p className="error-text">{errorMessage}</p>
         </div>
+        
       )}
       
     </div>

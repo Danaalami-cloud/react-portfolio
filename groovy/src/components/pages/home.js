@@ -1,6 +1,6 @@
 import React from 'react';
 // import '../src/App.css';
-import '../../images/github-logo.png'
+// import '../../images/github-logo.png'
 export default function Home() {
   return (
     
@@ -16,7 +16,7 @@ export default function Home() {
     <img src="https://github.com/DwinaTech/public-images/blob/main/linkedin-icon.png?raw=true"  alt="LinkIn-icon"/>  
      </a>
      <a href="https://github.com/Danaalami-cloud"   rel="noopener noreferrer"  target="_blank" >    
-    <img src="../../images/github-logo.png"  alt="Github-icon" /> 
+    <img src="https://pngimg.com/uploads/github/small/github_PNG58.png"  alt="Github-icon" /> 
      </a>
     </div>
     
