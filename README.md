@@ -41,10 +41,10 @@ A new Portfolio built by React.
 2. npm install
 3. npm start
 
-Running seeders/seed.js is optional to have a prepopulated database.
+
 
 <p align="center">
-    <a href=" your heroku link"  alt="Live Site" /></a>
+    <a href=" https://danaalami-cloud.github.io/react-portfolio/"  alt="Live Site" /></a>
 </p>
 
 
