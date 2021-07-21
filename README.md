@@ -50,11 +50,11 @@ A new Portfolio built by React.
 
 ## Usage
 
-### Screeshots
+### Deployed App
 
-1. Homepage 
 
-![Site](./screen.png)
+
+https://danaalami-cloud.github.io/react-portfolio/
 
 
 
