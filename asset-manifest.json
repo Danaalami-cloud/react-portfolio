@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Danaalami-cloud/react-portfolio/static/css/main.30bbda56.chunk.css",
-    "main.js": "/Danaalami-cloud/react-portfolio/static/js/main.178ef3b2.chunk.js",
-    "main.js.map": "/Danaalami-cloud/react-portfolio/static/js/main.178ef3b2.chunk.js.map",
+    "main.js": "/Danaalami-cloud/react-portfolio/static/js/main.a4b9e263.chunk.js",
+    "main.js.map": "/Danaalami-cloud/react-portfolio/static/js/main.a4b9e263.chunk.js.map",
     "runtime-main.js": "/Danaalami-cloud/react-portfolio/static/js/runtime-main.820d1033.js",
     "runtime-main.js.map": "/Danaalami-cloud/react-portfolio/static/js/runtime-main.820d1033.js.map",
     "static/css/2.4be38407.chunk.css": "/Danaalami-cloud/react-portfolio/static/css/2.4be38407.chunk.css",
@@ -25,6 +25,6 @@
     "static/css/2.4be38407.chunk.css",
     "static/js/2.fab820fa.chunk.js",
     "static/css/main.30bbda56.chunk.css",
-    "static/js/main.178ef3b2.chunk.js"
+    "static/js/main.a4b9e263.chunk.js"
   ]
 }
