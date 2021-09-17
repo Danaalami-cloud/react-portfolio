@@ -1,13 +1,46 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 // import '../src/App.css';
 // import '../../images/github-logo.png'
+import { animated, config, useTransition } from 'react-spring';
 export default function Home() {
+  const [items, setItems] = useState([WORD_TRANS])
+  const transitions = useTransition(items, {
+    from: { opacity: 0 },
+    enter: { opacity: 1 },
+    leave: { opacity: 0 },
+    delay: 200,
+    confing: config.molasses,
+    onRest: () => setItems([]),
+  })
+  useEffect(() => {
+    if (items.length === 0) {
+      setTimeout(() => {
+        setItems(WORD_TRANS)
+      }, 2000)
+    }
+  }, [items])
   return (
-    
+    // <Spring
+    // from={{ opacity: 0, marginTop: -500 }}
+    // enter= {{ opacity: 1}}
+    // leave={{ opacity: 0, marginTop: 0 }}
+    // config={{ delay: 1000, duration: 1000 }}
+    <div style={{ display: 'flex' }}>
+      {transitions(({ opacity }, item) => (
+      <animated.div
+      style={{
+        opacity: opacity.to(item.op),
+        transform: opacity
+        .to(item.trans)
+        .to(y => `translate3d(0,${y}px,0)`),
+      }}>
+      {item.fig}
+      {/* {props => (
+        <div style={props}> */}
+        {/* <div style={h1Style}>  */}
     <div className='home'>
-      <h1>Home Page</h1>
+      <h1>Welcome to my portfolio!</h1>
       <p>
-        Hiya! Welcome to my portfolio!
         Please have a look at this groovy react website and feel free to connect with me via 
         Linked, email or Github.
         Looking forward to become freinds or a future employee! :)
@@ -19,11 +52,20 @@ export default function Home() {
     <img src="https://pngimg.com/uploads/github/small/github_PNG58.png"  alt="Github-icon" /> 
      </a>
     </div>
-    
-    
-    
+     {/* </div> */}
+        {/* // </div> */}
+      {/* // )} */}
+      </animated.div>
+      ))};
+  </div>
+  )
+  // )}
+    // </Spring>
+  
+      } 
+  
 
-    
-  );
-}
 
+// const h1Style = {
+//   padding: '1.5rem'
+// }
