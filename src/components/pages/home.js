@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, setState } from 'react';
 // import '../src/App.css';
 // import '../../images/github-logo.png'
 import { animated, config, useTransition } from 'react-spring';
 export default function Home() {
-  const [items, setItems] = useState([WORD_TRANS])
+  const [items, setItems,] = setState([]),
   const transitions = useTransition(items, {
     from: { opacity: 0 },
     enter: { opacity: 1 },
@@ -15,7 +15,7 @@ export default function Home() {
   useEffect(() => {
     if (items.length === 0) {
       setTimeout(() => {
-        setItems(WORD_TRANS)
+        setItems()
       }, 2000)
     }
   }, [items])
