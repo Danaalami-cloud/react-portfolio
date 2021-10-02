@@ -1,9 +1,9 @@
-import React, { useEffect, setState } from 'react';
+import React, { useEffect, useState } from 'react';
 // import '../src/App.css';
 // import '../../images/github-logo.png'
-import { animated, config, useTransition, setState } from 'react-spring';
+import { animated, config, useTransition } from 'react-spring';
 export default function Home() {
-  const [words, setWords] = setState([]),
+  const [words, setWords] = useState([]);
   const transitions = useTransition(words, {
     from: { opacity: 0 },
     enter: { opacity: 1 },
