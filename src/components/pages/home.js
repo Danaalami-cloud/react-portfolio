@@ -1,24 +1,26 @@
 import React, { useEffect, setState } from 'react';
 // import '../src/App.css';
 // import '../../images/github-logo.png'
-import { animated, config, useTransition } from 'react-spring';
+import { animated, config, useTransition, setState } from 'react-spring';
 export default function Home() {
-  const [items, setItems,] = setState([]),
-  const transitions = useTransition(items, {
+  const [words, setWords] = setState([]),
+  const transitions = useTransition(words, {
     from: { opacity: 0 },
     enter: { opacity: 1 },
     leave: { opacity: 0 },
     delay: 200,
     confing: config.molasses,
-    onRest: () => setItems([]),
+    onRest: () => setWords([]),
   })
+  
+
   useEffect(() => {
-    if (items.length === 0) {
+    if (words.length === 0) {
       setTimeout(() => {
-        setItems()
-      }, 2000)
+        setWords()
+      }, 5000)
     }
-  }, [items])
+  }, [words])
   return (
     // <Spring
     // from={{ opacity: 0, marginTop: -500 }}
@@ -26,15 +28,15 @@ export default function Home() {
     // leave={{ opacity: 0, marginTop: 0 }}
     // config={{ delay: 1000, duration: 1000 }}
     <div style={{ display: 'flex' }}>
-      {transitions(({ opacity }, item) => (
+      {transitions(({ opacity }, words) => (
       <animated.div
       style={{
-        opacity: opacity.to(item.op),
+        opacity: opacity.to(words.op),
         transform: opacity
-        .to(item.trans)
+        .to(words.trans)
         .to(y => `translate3d(0,${y}px,0)`),
       }}>
-      {item.fig}
+      {words.fig}
       {/* {props => (
         <div style={props}> */}
         {/* <div style={h1Style}>  */}
