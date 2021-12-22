@@ -5,31 +5,31 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { render } from 'react-dom';
-import { Wave1, Wave2, Random1, Random2 } from './components/pages/home.js';
-
+import { Wave1, Wave2 } from './components/pages/home.js';
 
 const styles = {
   fontFamily: 'sans-serif',
   textAlign: 'center'
 };
-const App = () => (
+const MyApp = () => (
   <div style={styles}>
     <h1> Home Page</h1>
 
     <Wave1 />
     <Wave2 />
-    <Random1 />
-    <Random2 />
+    
     );
+    
   </div>
 )
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+render(
+  // <React.StrictMode>
+    <MyApp />,
+  // </React.StrictMode>,
   document.getElementById('root')
 );
+
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
