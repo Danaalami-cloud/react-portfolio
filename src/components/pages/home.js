@@ -1,10 +1,9 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 // import '../src/App.css';
 // import '../../images/github-logo.png'
 // import { Text, View, StyleSheet } from 'react-native';
 // import RollingText from 'react-native-rolling-text';
 import { Wave } from 'react-animated-text';
-
 
 const exampleStyle = {
   display: 'inline-block',
@@ -51,13 +50,15 @@ export class Wave2 extends React.Component {
     this.setState(prevState => ({ paused: !prevState.paused }));
   }
 }
+// const reset = {}
+const render = {}
 
-reset() {
+ function reset() {
     this.setState('paused', true);
-}
+ };
     export default function Home() {
   
-  render () {
+  render () 
   return (
      <div style={exampleStyle}>
        <a onClick={this.togglePause} style={{cursor: 'pointer'}}>
@@ -185,9 +186,8 @@ reset() {
 //     </View>
 // </View>
   
-)
-}
-    }
+)};
+
 
 const styles = StyleSheet.create({
   container: { 
