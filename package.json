@@ -13,7 +13,9 @@
     "react-animated-text": "^0.1.4",
     "react-bootstrap": "^1.6.1",
     "react-dom": "^17.0.2",
+    "react-native": "^0.67.1",
     "react-native-rolling-text": "0.0.1",
+    "react-native-web": "^0.17.5",
     "react-scripts": "4.0.3",
     "react-spring": "^9.2.4",
     "web-vitals": "^1.1.2"

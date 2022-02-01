@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { render } from 'react-dom';
 import { Wave1, Wave2 } from './components/pages/home.js';
+import {  StyleSheet } from 'react-native';
 
 const styles = {
   fontFamily: 'sans-serif',

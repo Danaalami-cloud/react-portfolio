@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 // import '../src/App.css';
 // import '../../images/github-logo.png'
-// import { Text, View, StyleSheet } from 'react-native';
+import {  StyleSheet } from 'react-native';
 // import RollingText from 'react-native-rolling-text';
 import { Wave } from 'react-animated-text';
 
@@ -38,9 +38,11 @@ const codeStyle = {
   </div> 
   </div>
 )
+ const reset = {}
 
-export class Wave2 extends React.Component {
-  constructor(props) {
+
+export class Wave2 extends React.Component  {
+  constructor (props) {
     super(props);
     this.state = { paused: true };
     this.togglePause = this.togglePause.bind(this);
@@ -48,14 +50,17 @@ export class Wave2 extends React.Component {
   }
   togglePause() {
     this.setState(prevState => ({ paused: !prevState.paused }));
+    reset = () => {
+      this.setState('paused', true);
+   };
   }
+   
 }
-// const reset = {}
 const render = {}
 
- function reset() {
-    this.setState('paused', true);
- };
+//  function reset() {
+//     this.setState('paused', true);
+//  };
     export default function Home() {
   
   render () 
