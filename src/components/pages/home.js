@@ -38,7 +38,6 @@ const codeStyle = {
   </div> 
   </div>
 )
- const reset = {}
 
 
 export class Wave2 extends React.Component  {
@@ -48,22 +47,24 @@ export class Wave2 extends React.Component  {
     this.togglePause = this.togglePause.bind(this);
     this.reset = this.reset.bind(this);
   }
+
   togglePause() {
     this.setState(prevState => ({ paused: !prevState.paused }));
-    reset = () => {
-      this.setState('paused', true);
-   };
+    
   }
+  reset  ()  {
+    this.setState('paused', true);
+ };
    
 }
-const render = {}
+// const render = {}
 
-//  function reset() {
-//     this.setState('paused', true);
-//  };
+
     export default function Home() {
   
-  render () 
+  // render () 
+  // const render = {}
+
   return (
      <div style={exampleStyle}>
        <a onClick={this.togglePause} style={{cursor: 'pointer'}}>
